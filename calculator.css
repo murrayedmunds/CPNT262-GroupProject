@@ -1,0 +1,93 @@
+*, *:before, *:after { 
+	box-sizing: border-box; 
+}
+
+img { 
+	max-width: 100%; 
+}
+
+body {
+	margin: 2% 0;
+	background-image: url(calculatorBackground.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center; 
+}
+
+#calculator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width:700px;
+	margin:0 auto;
+	padding: 25px 0;
+}
+
+#keypad {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:stretch;
+	margin: 50px auto;	
+}
+
+input {
+	font-family: 'Patrick Hand', cursive;
+	border-radius: 5px;
+	margin:4px;
+}
+
+#display {
+	margin:8% auto 0 auto;
+	padding:20px 70px;
+	font-size:1.6em;
+	clear:left;
+	font-weight: bold;
+	text-align: right;
+}
+
+.row {
+ 	width: 100%;
+}
+
+#btn {
+	float:left;
+}
+
+#btn input {
+	font-size:1.3em;
+	cursor: pointer;
+	color:white;
+	border: 1px solid black;
+}
+
+.txtBtn input {
+	width:81px;
+	height:100px; 
+	background-color: black;
+}
+
+.medBtn input {
+	width:122px;
+	height:90px;
+	background-color: #ed7615;
+}
+
+.numBtn input {
+	width:81px;
+	height:90px;
+	background-color: #361e0a;
+}
+
+.opBtn input {
+	width:81px;
+	height:90px;
+	background-color: #804d24;
+}
+
+.equalsBtn input {
+	width:340px;
+	height:90px;	
+	background-color: #0189FF;
+}
+

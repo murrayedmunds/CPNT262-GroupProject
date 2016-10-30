@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microwave Team Project for Javascript Class</title>
+    <link rel="stylesheet" href="microwave.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+</head>
+ 
+<body>
+    <main class="microwave">
+        <!-- div1 and div2 are only for the two red orbs with fade in, fade out events -->
+        <div id="div1"></div>
+        <div id="div2"></div>
+    <!--below is the microwave window object-->
+        <div class="door" >
+            <img src="./graphics/microwave-window.png" alt="microwave window graphic">
+        </div>
+
+
+    <!--below is the microwave button objects and right side panel -->
+        <div class="right-panel">
+            <div class="timer"><p id="countdown"></p></div>
+
+            <div class="num-pad">
+                <button value="1" id="1" onclick="addTime(this);" style="background-image:url('./buttons/button1.png')"></button>
+                <button value="2" id="2" onclick="addTime(this);" style="background-image:url('./buttons/button2.png')"></button>
+                <button value="3" id="3" onclick="addTime(this);" style="background-image:url('./buttons/button3.png')"></button>
+                <button value="4" id="4" onclick="addTime(this);" style="background-image:url('./buttons/button4.png')"></button>
+                <button value="5" id="5" onclick="addTime(this);" style="background-image:url('./buttons/button5.png')"></button>
+                <button value="6" id="6" onclick="addTime(this);" style="background-image:url('./buttons/button6.png')"></button>
+                <button value="7" id="7" onclick="addTime(this);" style="background-image:url('./buttons/button7.png')"></button>
+                <button value="8" id="8" onclick="addTime(this);" style="background-image:url('./buttons/button8.png')"></button>
+                <button value="9" id="9" onclick="addTime(this);" style="background-image:url('./buttons/button9.png')"></button>
+                <button value="0" id="0" onclick="addTime(this);" style="background-image:url('./buttons/button0.png')"></button>
+                <button type="button" id="start" value="start" onclick="startTimer();" style="background-image:url('./buttons/start.png')">Start</button>
+                <button value="pause" id="Pause" value="Pause" onclick="pause();" ondblclick="clr();" style="background-image:url('./buttons/stop-clear.png')">Stop/Clear</button>
+            </div>
+        </div>
+        <audio>
+            <source src="audio/ding.wav">
+        </audio>
+    </main>
+
+
+    <footer>
+        <img src="./graphics/footer.svg" alt="team members ">
+    </footer>
+
+
+<script type="text/javascript" src="microwave.js"></script>
+</body>
+</html>

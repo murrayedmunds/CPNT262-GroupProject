@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript" src="calculator.js"></script>
+        <link rel="stylesheet" href="calculator.css">
+        <title></title>
+    </head>
+    <body>
+        <div id="calculator">
+        	<input type="text" name="display" id="display" placeholder="0" onkeyup="keyLimit()" onkeypress="handleKeyPress(event)"><br>
+            <div id="keypad">
+                <div class="row">
+                    <div id="btn" class="txtBtn"><input type="button" value="sqrt" onclick="sqrt();"></div>
+                    <div id="btn" class="txtBtn"><input type="button" value="sq" onclick="sq();"></div>
+                    <div id="btn" class="txtBtn"><input type="button" value="ln" onclick="ln();"></div>
+                    <div id="btn" class="txtBtn"><input type="button" value="sin" onclick="sin();"></div>
+                    <div id="btn" class="txtBtn"><input type="button" value="cos" onclick="cos();"></div>
+                    <div id="btn" class="txtBtn"><input type="button" value="tan" onclick="tan();"></div>
+                </div>
+                <div class="row">
+                    <div id="btn" class="numBtn"><input type="button" value="1" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="2" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="3" onclick="show(this);"></div>
+                    <div id="btn" class="opBtn"><input type="button" value="^" onclick="show(this);"></div>
+                    <div id="btn" class="opBtn"><input type="button" value="(" onclick="show(this);"></div>
+                    <div id="btn" class="opBtn"><input type="button" value=")" onclick="show(this);"></div>
+                </div>
+                <div class="row">
+                    <div id="btn" class="numBtn"><input type="button" value="4" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="5" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="6" onclick="show(this);"></div>
+                    <div id="btn" class="medBtn"><input type="button" value="*" onclick="show(this);"></div>
+                    <div id="btn" class="medBtn"><input type="button" value="/" onclick="show(this);"></div>
+                </div>
+                <div class="row">
+                    <div id="btn" class="numBtn"><input type="button" value="7" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="8" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="9" onclick="show(this);"></div>
+                    <div id="btn" class="medBtn"><input type="button" value="+" onclick="show(this);"></div>
+                    <div id="btn" class="medBtn"><input type="button" value="-" onclick="show(this);"></div>
+                </div>
+                <!-- The '=' sign will fill the dead space -->
+                <div class="row">
+                    <div id="btn" class="numBtn"><input type="button" value="0" onclick="show(this);"></div>
+                    <div id="btn" class="numBtn"><input type="button" value="." onclick="show(this);"></div>       
+                	<div id="btn" class="equalsBtn"><input type="button" value=" =  /  Clr" onclick="calc();" ondblclick="blank()";"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+
+
+/*container for entire microwave*/
+.microwave {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: 1.5em solid black;
+    height: 70%;
+    background-image: url("./graphics/microwave-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#div1 {
+    position: absolute;
+    margin-top: -12.8em;
+    margin-left: 6.05em;
+    width:70px; 
+    height:70px; 
+    background-color: red; 
+    display: none;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+#div2 {
+    position: absolute;
+    margin-top:  7em;
+    margin-left: 6.05em;
+    width:70px; 
+    height:70px; 
+    background-color: red; 
+    display: none;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+
+.timer {
+    border: thick solid black;
+    background-color: white;
+    width:300px; 
+    height: 2em;
+    margin: 0 auto;
+}
+
+/* Style for time display */
+.timer p{
+    font-family: helvetica;
+    font-size: 1.4em; 
+    margin-left:33%;
+    margin-top: 0.15em;
+}
+
+
+/*positioning of microwave window */
+.door {
+    display: absolute;
+    margin-top: -55px;
+    margin-left: 15%;
+    width:40%;
+    height:400px;
+    padding: 0;
+    float:left;
+}
+.door img {
+    display: block;
+    z-index: 1;
+    width:100%;
+}
+
+
+.right-panel {
+    border: 15px black solid;
+
+    width:40%;
+    height: 500px;
+    padding: 1em;
+    float:right;
+}
+
+/*flex box for microwave buttons -needs work*/
+.num-pad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    /*width: 9.5em;
+    height: 12.5em;*/
+    width: 300px;
+    height:400px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 4px; 
+    border: thick black solid;
+
+
+}
+.num-pad button {
+    height: 25%;
+    width: 33%;
+    padding: 4%;
+    background-size:100% 100%;
+}
+
+.num-pad button:hover {
+    background-color:black;
+}
+button {
+    font-size:0;
+}
+
+footer {
+    background-color:black;
+    margin-top:0;
+    padding:0;
+    height:auto;
+    font-size: 2em;
+    text-align:center;
+}
+
+footer img {
+    width:100%;
+}
+
+
